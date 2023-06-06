@@ -29,4 +29,4 @@ def test_get_admin_JWT():
 
     data = response.json()
     token_admin = data['access']
-    return token_admin
+
