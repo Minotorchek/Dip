@@ -20,8 +20,8 @@ ENDPOINT = 'http://127.0.0.1:8000/auth/'
 @pytest.fixture
 def test_get_admin_JWT():
     payload = {
-        'email': 'eraspb@mail.ru',
-        'password': 'Naz'
+        'email': '',
+        'password': ''
     }
 
     response = requests.post('http://127.0.0.1:8000/auth/jwt/create', json=payload)
